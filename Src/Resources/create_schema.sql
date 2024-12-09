@@ -37,6 +37,23 @@ WHERE id = 4 AND seller_id = (SELECT id FROM Users WHERE username = 'Declan');
 
 -- Delete A Product -- 
 DELETE FROM Products
-WHERE id = 2 AND seller_id = (SELECT id FROM Users WHERE username = 'Declan');
+WHERE id = 5 AND seller_id = (SELECT id FROM Users WHERE username = 'John');
+
+-- Viewing all Users (Admin) --
+SELECT id, username, email, role FROM Users;
+
+-- Delete A User (Admin) --
+DELETE FROM Users
+WHERE id = (SELECT id FROM Users WHERE username = 'John');
+
+-- Searching For A Product --
+SELECT * FROM Products
+WHERE name ILIKE 'TV';
+
+-- Listing Products With Sellers Info --
+SELECT p.id, p.name, p.price, p.quantity, u.username AS seller_name, u.email AS seller_email
+FROM Products p
+JOIN Users u ON p.seller_id = u.id;
+
 
 
