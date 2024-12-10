@@ -2,8 +2,8 @@
 INSERT INTO Users (username, password, email, role)
 VALUES
 ('Logan', 'password1', 'logan@gmail.com', 'admin'),
-('Declan', 'password2', 'declan@gmail.com', 'buyer'),
-('Nick', 'password3', 'nick@gmail.com', 'seller');
+('Declan', 'password2', 'declan@gmail.com', 'seller'),
+('Nick', 'password3', 'nick@gmail.com', 'buyer');
 
 -- Insert Products
 INSERT INTO Products (name, price, quantity, seller_id)
