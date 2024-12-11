@@ -4,11 +4,11 @@ package Src.Main.Models;
 public class Product {
     protected int productId;
     protected String productName;
-    protected int productPrice;
+    protected double productPrice;
     protected int productQuantity;
     protected int productSeller_Id;
 
-    public Product(int id, String name, int price, int quantity, int seller_id){
+    public Product(int id, String name, double price, int quantity, int seller_id){
         productId = id;
         productName = name;
         productPrice = price;
@@ -25,7 +25,7 @@ public class Product {
         productName = name;
     }
 
-    public void setPrice(int price){
+    public void setPrice(double price){
         productPrice = price;
     }
 
@@ -46,7 +46,7 @@ public class Product {
         return productName;
     }
 
-    public int getPrice(){
+    public double getPrice(){
         return productPrice;
     }
 
@@ -63,9 +63,5 @@ public class Product {
         return "Name: " + productName + ", Price: " + productPrice + ", Quantity: " + productQuantity + ", Seller ID: " + productSeller_Id + ", Product ID: " + productId;
     }
 
-    public int getId() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getId'");
     }
-}
 
