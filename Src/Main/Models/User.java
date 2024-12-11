@@ -56,7 +56,20 @@ public class User {
         return "Username: " + this.username + ", Password: " + this.password + ", Email: " + this.email + ", Role: " + this.role;
     }
 
+    
+    
+    
+    
+    
+    
+    
+    // NEEDS TO BE ADDED BY NICK //
+    
     public void setId(int int1) {
         throw new UnsupportedOperationException("Unimplemented method 'setId'");
+    }
+
+    public int getId() {
+        throw new UnsupportedOperationException("Unimplemented method 'getId'");
     }
 }
