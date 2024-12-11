@@ -43,7 +43,7 @@ public class ProductDAO {
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
-                product = new Product();
+                product = new Product(productId, sql, productId, productId, productId);
                 product.setId(rs.getInt("id"));
                 product.setName(rs.getString("name"));
                 product.setPrice(rs.getDouble("price"));
@@ -66,7 +66,7 @@ public class ProductDAO {
              ResultSet rs = stmt.executeQuery(sql)) {
 
             while (rs.next()) {
-                Product product = new Product();
+                Product product = new Product(0, sql, 0, 0, 0);
                 product.setId(rs.getInt("id"));
                 product.setName(rs.getString("name"));
                 product.setPrice(rs.getDouble("price"));
@@ -118,7 +118,7 @@ public class ProductDAO {
             ResultSet rs = stmt.executeQuery();
 
             while (rs.next()) {
-                Product product = new Product();
+                Product product = new Product(sellerId, sql, sellerId, sellerId, sellerId);
                 product.setId(rs.getInt("id"));
                 product.setName(rs.getString("name"));
                 product.setPrice(rs.getDouble("price"));
