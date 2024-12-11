@@ -63,3 +63,4 @@ public class Product {
         return "Name: " + productName + ", Price: " + productPrice + ", Quantity: " + productQuantity + ", Seller ID: " + productSeller_Id + ", Product ID: " + productId;
     }
 }
+
