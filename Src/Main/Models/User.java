@@ -2,6 +2,7 @@ package Src.Main.Models;
 
 // Constructors
 public class User {
+    private int ID;
     private String username;
     private String password;
     private String email;
@@ -10,7 +11,8 @@ public class User {
     public User(){
     }
 
-    public User(String username, String password, String email, String role) {
+    public User(int ID, String username, String password, String email, String role) {
+        this.ID = ID;
         this.username = username;
         this.password = password;
         this.email = email;
@@ -18,6 +20,10 @@ public class User {
     }
     
     // Getters
+    public int getID() {
+        return ID;
+    }
+
     public String getUsername() {
         return username;
     }
@@ -33,8 +39,12 @@ public class User {
     public String getRole() {
         return role;
     }
-    
+
     // Setters
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
     public void setUsername(String username) {
         this.username = username;
     }
@@ -50,12 +60,12 @@ public class User {
     public void setRole(String role) {
         this.role = role;
     }
-
+    
     // Output
     public String toString() {
-        return "Username: " + this.username + ", Password: " + this.password + ", Email: " + this.email + ", Role: " + this.role;
+        return "ID: " + this.ID + ", Username: " + this.username + ", Password: " + this.password + ", Email: " + this.email + ", Role: " + this.role;
     }
-
+}
     
     
     
