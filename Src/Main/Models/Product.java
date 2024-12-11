@@ -52,4 +52,9 @@ public class Product {
     public String toString(){
         return "Name: " + productName + ", Price: " + productPrice + ", Quantity: " + productQuantity + ", Seller ID: " + productSeller_Id;
     }
+
+    public int getId() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getId'");
+    }
 }
