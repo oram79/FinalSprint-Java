@@ -123,11 +123,11 @@ public class Admin {
     }
 
     public void addUser(Admin admin){
-        listofProducts.add(admin);
+        listofUsers.add(admin);
     }
 
     public void deleteUser(Admin admin){
-        listofProducts.remove(admin);
+        listofUsers.remove(admin);
     }
 
     public void printlistofUsers(){
