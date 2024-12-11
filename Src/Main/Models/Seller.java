@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Seller {
     private String name;
-    private int price;
+    private double price;
     private int quantity;
     private int seller_id;
 
@@ -14,7 +14,7 @@ public class Seller {
 
     }
 
-    public Seller(String name, int price, int quantity, int seller_id) {
+    public Seller(String name, double price, int quantity, int seller_id) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -29,7 +29,7 @@ public class Seller {
         this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return this.price;
     }
 

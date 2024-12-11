@@ -9,7 +9,7 @@ public class Admin {
     private String email;
     private String role;
     private String name;
-    private int price;
+    private double price;
     private int quantity;
     private int seller_id;
 
@@ -27,7 +27,7 @@ public class Admin {
         this.role = role;
     }
 
-    public Admin(String name, int price, int quantity, int seller_id) {
+    public Admin(String name, double price, int quantity, int seller_id) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -82,11 +82,11 @@ public class Admin {
         this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return this.price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

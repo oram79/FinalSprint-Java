@@ -13,7 +13,7 @@ public class ProductService {
         this.productDAO = productDAO;
     }
 
-    public void addProduct(int id, String name, int price, int quantity, int seller_id){
+    public void addProduct(int id, String name, double price, int quantity, int seller_id){
         Product product = new Product(id, name, price, quantity, seller_id);
         try {
             productDAO.addProduct(product);
@@ -32,7 +32,7 @@ public class ProductService {
         }
     }
 
-    public void updateProduct(int id, String name, int price, int quantity, int seller_id){
+    public void updateProduct(int id, String name, double price, int quantity, int seller_id){
         Product product = new Product(id, name, price, quantity, seller_id);
         try {
             productDAO.updateProduct(product);
@@ -42,7 +42,7 @@ public class ProductService {
         }
     }
 
-    public void viewProduct(int id, String name, int price, int quantity, int seller_id){
+    public void viewProduct(int id, String name, double price, int quantity, int seller_id){
         try {
             List<Product> products = productDAO.getAllProducts();
             System.out.println("LISTED PRODUCTS:");
