@@ -42,7 +42,7 @@ public class UserDAO {
 
             if (rs.next()) {
                 user = new User();
-                user.setId(rs.getInt("ID"));
+                user.setID(rs.getInt("ID"));
                 user.setUsername(rs.getString("username"));
                 user.setPassword(rs.getString("password"));
                 user.setEmail(rs.getString("email"));
@@ -64,7 +64,7 @@ public class UserDAO {
 
             while (rs.next()) {
                 User user = new User();
-                user.setId(rs.getInt("id"));
+                user.setID(rs.getInt("id"));
                 user.setUsername(rs.getString("username"));
                 user.setPassword(rs.getString("password"));
                 user.setEmail(rs.getString("email"));
@@ -87,7 +87,7 @@ public class UserDAO {
             stmt.setString(2, user.getPassword());
             stmt.setString(3, user.getEmail());
             stmt.setString(4, user.getRole());
-            stmt.setInt(5, user.getId());
+            stmt.setInt(5, user.getID());
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
