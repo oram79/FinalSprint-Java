@@ -10,6 +10,10 @@ import java.util.List;
 import Src.Main.Models.User;
 import Src.Main.Utils.DatabaseConnection;
 
+/**
+ * database for maintaining users
+ */
+
 public class UserDAO {
     private Connection connection;
     public UserDAO() {

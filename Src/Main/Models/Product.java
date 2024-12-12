@@ -1,5 +1,9 @@
 package Src.Main.Models;
 
+/**
+ * class for products listed on the program
+ */
+
 // Constructors
 public class Product {
     protected int productId;

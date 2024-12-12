@@ -6,7 +6,11 @@ import java.util.List;
 import Src.Main.Dao.ProductDAO;
 import Src.Main.Models.Product;
 
-public class ProductService {
+/**
+ * service file for users to list, buy, and sell products within the program
+ */
+
+ public class ProductService {
     private final ProductDAO productDAO;
 
     public ProductService(ProductDAO productDAO) {

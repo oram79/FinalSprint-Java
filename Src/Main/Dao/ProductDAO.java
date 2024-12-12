@@ -10,6 +10,10 @@ import java.util.List;
 import Src.Main.Models.Product;
 import Src.Main.Utils.DatabaseConnection;
 
+/**
+ * database for maintaining products
+ */
+
 public class ProductDAO {
     private Connection connection;
 

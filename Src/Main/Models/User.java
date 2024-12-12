@@ -1,5 +1,9 @@
 package Src.Main.Models;
 
+/**
+ * class for users on the program
+ */
+
 // Constructors
 public class User {
     private int ID;

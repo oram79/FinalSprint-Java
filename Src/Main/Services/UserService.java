@@ -6,6 +6,10 @@ import java.util.List;
 import Src.Main.Dao.UserDAO;
 import Src.Main.Models.User;
 
+/**
+ * service file for determining user registration, login, and details
+ */
+
 public class UserService {
     private final UserDAO userDAO;
 
