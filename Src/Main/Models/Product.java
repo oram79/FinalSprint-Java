@@ -8,6 +8,10 @@ public class Product {
     protected int productQuantity;
     protected int productSeller_Id;
 
+    public Product() {
+        
+    }
+
     public Product(int id, String name, double price, int quantity, int seller_id){
         productId = id;
         productName = name;
@@ -54,7 +58,7 @@ public class Product {
         return productQuantity;
     }
 
-    public int getSeller_Id(){
+    public int getSeller_Id(Object object){
         return productSeller_Id;
     }
 

@@ -40,4 +40,28 @@ public class ProductService {
             System.out.println("Quantity: " + product.getQuantity());
         }
     }
+
+    public List<Product> getAllProducts() {
+        throw new UnsupportedOperationException("Unimplemented method 'getAllProducts'");
+    }
+
+    public List<Product> searchProductsByName(String productName) {
+        throw new UnsupportedOperationException("Unimplemented method 'searchProductsByName'");
+    }
+
+    public List<Product> getProductsBySellerId(Object id) {
+        throw new UnsupportedOperationException("Unimplemented method 'getProductsBySellerId'");
+    }
+
+    public void updateProduct(Product updatedProduct) {
+        throw new UnsupportedOperationException("Unimplemented method 'updateProduct'");
+    }
+
+    public void addProduct(Product newProduct) {
+        throw new UnsupportedOperationException("Unimplemented method 'addProduct'");
+    }
+
+    public void deleteProduct(int productIdToDelete) {
+        throw new UnsupportedOperationException("Unimplemented method 'deleteProduct'");
+    }
 }

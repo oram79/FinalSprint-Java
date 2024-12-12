@@ -42,4 +42,20 @@ public class UserService {
             System.out.println("Role: " + user.getRole());
         }
     }
+
+    public void registerUser(User newUser) {
+        throw new UnsupportedOperationException("Unimplemented method 'registerUser'");
+    }
+
+    public User addUser(String username, String password) {
+        throw new UnsupportedOperationException("Unimplemented method 'addUser'");
+    }
+
+    public List<User> getAllUsers() {
+        throw new UnsupportedOperationException("Unimplemented method 'getAllUsers'");
+    }
+
+    public void deleteUser(int userIdToDelete) {
+        throw new UnsupportedOperationException("Unimplemented method 'deleteUser'");
+    }
 }

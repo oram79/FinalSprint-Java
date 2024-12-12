@@ -25,7 +25,7 @@ public class ProductDAO {
             stmt.setString(1, product.getName());
             stmt.setDouble(2, product.getPrice());
             stmt.setInt(3, product.getQuantity());
-            stmt.setInt(4, product.getSeller_Id());
+            stmt.setInt(4, product.getSeller_Id(stmt));
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -33,7 +33,6 @@ public class ProductDAO {
     }
 
     // Displaying A Product By ID //
-
     public Product getProductById(int productId) {
         String sql = "SELECT * FROM Products WHERE id = ?";
         Product product = null;

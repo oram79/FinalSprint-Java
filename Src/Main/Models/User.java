@@ -65,4 +65,12 @@ public class User {
     public String toString() {
         return "ID: " + this.ID + ", Username: " + this.username + ", Password: " + this.password + ", Email: " + this.email + ", Role: " + this.role;
     }
+
+    
+    
+    
+    public Object getId() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getId'");
+    }
 }
